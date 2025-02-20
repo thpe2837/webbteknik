@@ -1,0 +1,590 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: "Inter";
+}
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	color: #0D3B66;
+}
+
+h2 {
+	color: #0D3B66;
+}
+
+h3 {
+	color: #0D3B66;
+}
+
+p {
+	color: #0D3B66;
+}
+
+body {
+	background-color: #F2E3BC;
+}
+
+/*HEADER*/
+header {
+	background-color: #F2E3BC;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+header h1 {
+	text-align: left;
+	padding-left: 5px;
+}
+.headercontainer {
+	width: 100%;
+	height: 80px;
+	display: block;
+}
+.innerheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+}
+.logocontainer {
+	height: 100%;
+	display: table;
+	float: left;
+	margin-right: auto;
+}
+.logocontainer h1 {
+	color: #0D3B66;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+/*NAVIGATION*/
+.hamb-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	margin-left: auto;
+}
+.hamb-menu .bar {
+	width: 100%;
+	height: 5px;
+	background-color: #0D3B66;
+	border-radius: 5px;
+}
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	background-color: #F2E3BC;
+	padding: 10px;
+}
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.menu ul li {
+	margin-left: 20px;
+}
+.menu ul li a {
+	color: #0D3B66;
+	text-decoration: none;
+	font-weight: bold;
+}
+.menu ul li a:hover {
+	opacity: 0.7;
+}
+.menu ul li a.active {
+	opacity: 0.7;
+}
+
+/*MAIN*/
+main {
+	background-color: #F2E3BC;
+}
+.spacer{
+	height: 55vh;
+	background-color: transparent;
+}
+.introcontainer {
+	width: 90%;
+	display: flex;
+	margin-top: 40px;
+	padding: 50px;
+}
+.infocontainer {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	padding: 50px;
+	gap: 80px;
+}
+
+/*FOOTER*/
+footer {
+	background-color: #F2E3BC;
+}
+footer hr {
+	color: #0D3B66;
+}
+.footercontainer {
+	width: 100%;
+	padding: 70px 30 px 20px;
+}
+.footernav {
+	margin: 30px 0;
+}
+.footernav ul {
+	display: flex;
+	justify-content: center;
+}
+.footernav ul li a {
+	color: #0D3B66;
+	margin: 20px;
+	font-size: 1.1em;
+	opacity: 0.7;
+	transition: 0.5s;
+}
+.footernav ul li a:hover {
+	opacity: 1;
+}
+.footerbottom {
+	background-color: #F2E3BC;
+	padding: 20px;
+	text-align: center;
+}
+.footerbottom p {
+	color: #0D3B66;
+}
+.designer {
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 0px 5px;
+}
+
+/*INDEX*/
+.videocontainer {
+	position: absolute;
+	width: 100%;
+	height: 60vh;
+}
+.backgroundvideo {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: saturate(0);
+}
+.imagecontainer-index {
+	display: flex;
+	gap: 20px;
+}
+.textcontainer-index {
+	width: 500px;
+	text-align: left;
+}
+.facebooklink {
+	width: 90%;
+	display: block;
+	padding: 50px;
+	font-family: inherit;
+	font-size: larger;
+	font-weight: bold;
+}
+.facebooklink a {
+	color: #0D3B66;
+}
+.facebooklink a:hover {
+	opacity: 0.7;
+}
+
+/*ACTICITIES*/
+.calender {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	padding: 50px;
+	gap: auto;
+}
+.calender h1 {
+	font-size: 5rem;
+}
+.circle-container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 20px auto;
+    border: 8px solid #1e3a56;
+    border-radius: 50%;
+}
+.event {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #C1666B;
+	border: 8px solid #F2E3BC;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Beräknar placeringen av punkterna runt cirkeln */
+.event {
+    left: calc(50% + 400px * cos(var(--angle)));
+    top: calc(50% + 400px * sin(var(--angle)));
+}
+.event:hover {
+	scale: 2.0;
+}
+/* Stil för textetiketterna */
+.label-event {
+    position: absolute;
+	left: calc(50% + 60px * cos(var(--angle)));
+    top: calc(50% + 60px * sin(var(--angle)));
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 12px;
+	font-weight: bold;
+    text-align: center;
+    color: #1e3a56;
+}
+
+.destinationcontainer {
+	width: 100%;
+	display: block;
+	padding-right: 0;
+	padding-bottom: 50px;
+}
+.destinationcontainer h2 {
+	padding-left: 50px;
+}
+.pictures-activities {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	gap: 40px;
+	overflow-x: scroll;
+	padding-right: 50px;
+	padding-left: 50px;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
+/*COMMUNITIES*/
+.pictures-communities {
+	width: 100%;
+	display: flex;
+	padding-left: 50px;
+	padding-right: 50px;
+	gap: 70px;
+}
+.communitiescontainer {
+	width: 90%;
+	display: block;
+	padding: 50px;
+	gap: 100px;
+}
+.textcontainer-communities {
+	padding-top: 60px;
+}
+.textcontainer-communities p {
+	margin-left: 20px;
+}
+.textcontainer-communities ul li {
+	font-family: inherit;
+	color: #0D3B66;
+	margin-left: 20px;
+}
+.textcontainer-communities a {
+	color: #0D3B66;
+	opacity: 0.7;
+}
+.textcontainer-communities a:hover {
+	font-weight: bold;
+}
+.video-jakt {
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+	filter: saturate(0);
+	margin-top: 60px;
+}
+
+/*HISTORY*/
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+	font-family: "Inter"; /* Är typ arial fortfarande men är osäker*/
+}
+.category-btn {
+    background-color: #1e3a56;
+    color: #F2E3BC;
+    padding: 40px;
+    border: none;
+    cursor: pointer;
+	font-family: "Inter";
+	font-weight: bold;
+}
+.category-btn:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+/*Viktiga årtal*/
+.timeline-section {
+	width: 90%;
+	margin: auto;
+	padding: 50px 0;
+	position: relative;
+	margin-top: 10vh;
+}
+.timeline {
+	position: relative;
+	max-width: 800px;
+	margin: auto;
+}
+.timeline-item {
+	position: relative;
+	padding: 20px;
+	width: 50%;
+}
+.timeline-item:nth-child(odd) {
+	text-align: right;
+	left: 0;
+}
+.timeline-item:nth-child(even) {
+	text-align: left;
+	left: 50%;
+}
+.timeline-item::before {
+	content: "";
+	position: absolute;
+	top: 20px;
+	width: 20px;
+	height: 20px;
+	background-color: #C1666B;
+	border-radius: 50%;
+	border: 4px solid #F2E3BC;
+}
+.timeline-item:nth-child(odd)::before {
+	right: -14px;
+}
+.timeline-item:nth-child(even)::before {
+	left: -14px;
+}
+.timeline::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 8px;
+	height: 100%;
+	background-color: #0D3B66;
+	transform: translateX(-50%);
+}
+.timeline-content {
+	background-color: #F8F1DD;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+/*Fastigheter*/
+.property-history {
+	margin: 50px 0;
+	display: block;
+	margin-top: 20px;
+	padding: 50px;
+}
+.property-history details {
+    background: #F8F1DD;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border: none;
+}
+.property-history summary {
+	color: #0D3B66;
+	cursor: pointer;
+}
+.property-history summary:hover {
+	font-weight: bold;
+}
+.property-history p {
+    color: #0D3B66
+}
+
+.property-history img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/*Berättelser*/
+.story-section {
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	padding: 50px;
+	gap: 100px;
+}
+.stories {
+	width: 100%;
+	padding: 20px;
+}
+.story-item {
+	padding-bottom: 60px;
+}
+.story-content {
+	width: 90%;
+}
+
+/*Dialektala uttryck*/
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+th, td {
+	border: 1px solid #0D3B66;
+	background-color: #F8F1DD;
+	padding: 8px;
+	text-align: left;
+	color: #0D3B66;
+}
+
+/*Mat man minns*/
+.story-content ul {
+	color: #0D3B66;
+	padding-left: 40px;
+}
+.story-content ul li {
+	list-style-type: disc;
+}
+
+/*ABOUT US*/
+.formcontainer {
+	width: 100%;
+	display: block;
+	padding: 50px;
+}
+.contactform {
+	width: 100%;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Inter";
+	color: #0D3B66;
+}
+input, textarea {
+	width: 60%;
+	padding: 10px; /* Lägg till lite inre marginal */
+    border: none;
+    font-size: 16px; /* Samma textstorlek */
+    font-family: inherit; /* Ärver font från body */
+	color: #0D3B66;
+    box-sizing: border-box; /* Gör så att padding inte påverkar storleken */
+	background-color: #F8F1DD;
+}
+label {
+	margin-top: 20px;
+}
+#message {
+	min-height: 100px;
+	max-height: 300px;
+	resize: vertical;
+}
+input[type="submit"] {
+	width: 100px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+	/*MENU*/
+	.hamb-menu {
+		display: flex;
+	}
+	.menu {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		position: absolute;
+		top: 80px;
+		background-color: #F2E3BC;
+	}
+	.menu ul {
+		flex-direction: column;
+	}
+	.menu ul li {
+		margin: 0;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.menu.active {
+		display: flex;
+	}
+
+	/*MAIN*/
+	.infocontainer {
+		flex-direction: column;
+		gap: none;
+	}
+
+	/*FOOTER*/
+	.footernav ul {
+		flex-direction: column;
+	}
+	.footernav ul li {
+		width: 100%;
+		text-align: center;
+		margin: 10px;
+	}
+
+	/*INDEX*/
+	.imagecontainer-index {
+		flex-direction: column;
+	}
+
+	/*HISTORY*/
+	.category-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media print {
+	* {
+		color: black !important;
+		background-color: none !important;
+	}
+
+	header, footer {
+		display: none;
+	}
+
+	input, textarea {
+		border: 1px solid black;
+		background-color: none !important;
+	}
+}
