@@ -249,9 +249,6 @@ footer hr {
     left: calc(50% + 400px * cos(var(--angle)));
     top: calc(50% + 400px * sin(var(--angle)));
 }
-.event:hover {
-	scale: 2;
-}
 /* Stil för textetiketterna */
 .label-event {
     position: absolute;
