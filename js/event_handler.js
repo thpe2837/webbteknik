@@ -33,3 +33,22 @@ const events = [
 		description: "Fira in våren med oss mitt i byn den 30 april! Vi tänder majbrasa, sjunger in våren och njuter av en härlig kväll tillsammans."
 	}
 ];
+
+// Funktion för att hitta det närmaste eventet
+function getNearestEvent() {
+	const today = new Date();
+	let nearestEvent = null;
+	let minDiff = Infinity;
+
+	events.forEach(event => {
+		const eventDate = new Date(event.date);
+		const diff = eventDate - today;
+
+		if ( diff >= 0 && diff < minDiff) {
+			minDiff = diff;
+			nearestEvent = event;
+		}
+	});
+
+	return nearestEvent;
+}
