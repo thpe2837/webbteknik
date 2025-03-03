@@ -9,27 +9,27 @@ const events = [
 		description: "Välkommen på knytkalas den 24 augusti nere vid hamnen i Bäcknäset! Ta med något gott att äta och dela med andra. Vi njuter av sensommarkvällen tillsammans med god mat, trevligt sällskap och fin utsikt över vattnet."
 	},
 	{
-		title: ,
+		title: "Våffeldagen",
 		date: ,
 		image: ,
 		description:
 	},
 	{
-		title: ,
+		title: "Glöggmys med tomten",
 		date: ,
 		image: ,
 		description:
 	},
 	{
-		title: ,
-		date: ,
+		title: "Bredviksvasan",
+		date: "2025-03-08",
 		image: ,
 		description:
 	},
 	{
-		title: ,
-		date: ,
-		image: ,
+		title: "Majbrasa mitt i byn",
+		date: "2025-04-30",
+		image: "../img/majbrasa",
 		description:
 	}
 ]
