@@ -10,13 +10,13 @@ const events = [
 	},
 	{
 		title: "Våffeldagen",
-		date: ,
-		image: ,
+		date: "2025-03-25",
+		image: "../img/vafflor.jpg",
 		description:
 	},
 	{
 		title: "Glöggmys med tomten",
-		date: ,
+		date: "2025-12-07",
 		image: ,
 		description:
 	},
@@ -29,7 +29,7 @@ const events = [
 	{
 		title: "Majbrasa mitt i byn",
 		date: "2025-04-30",
-		image: "../img/majbrasa",
-		description:
+		image: "../img/majbrasa.jpg",
+		description: "Fira in våren med oss mitt i byn den 30 april! Vi tänder majbrasa, sjunger in våren och njuter av en härlig kväll tillsammans."
 	}
-]
+];
