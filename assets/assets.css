@@ -151,7 +151,7 @@ main {
 	border-radius: 5px;
 }
 #back-to-top:hover {
-	background-color: #0D3B66;
+	opacity: 0.7;
 }
 
 /*FOOTER*/
