@@ -71,3 +71,6 @@ function updateEventDisplay() {
 		document.querySelector(".textcontainer-index p").textContent =nearestEvent.description;
 	}
 }
+
+// Kör funktionen när sidan laddas
+document.addEventListener("DOMContentLoaded", updateEventDisplay);
