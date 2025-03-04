@@ -137,6 +137,22 @@ main {
 	padding: 50px;
 	gap: 80px;
 }
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	background-color: #C1666B;
+	color: #F2E3BC;
+	border: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#back-to-top:hover {
+	background-color: #0D3B66;
+}
 
 /*FOOTER*/
 footer {
