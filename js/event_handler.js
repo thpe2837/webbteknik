@@ -63,7 +63,8 @@ function updateEventDisplay() {
 	const nearestEvent = getNearestEvent();
 
 	if (nearestEvent) {
-		document.querySelector(".date-index img").src = 
+		document.querySelector(".date-index img").src = nearestEvent.icon;
+		document.querySelector(".date-index img").alt = nearestEvent.date;
 		document.querySelector(".image-index img").src = nearestEvent.image;
 		document.querySelector(".image-index img").alt = nearestEvent.title;
 		document.querySelector(".textcontainer-index h2").textContent = nearestEvent.title;
