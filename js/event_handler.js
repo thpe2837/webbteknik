@@ -20,7 +20,7 @@ const events = [
 		title: "Glöggmys med tomten",
 		date: "2025-12-07T00:00:00",
 		icon: "../img/event/date_tomten.png",
-		image: "../img/event/tomten.png",
+		image: "../img/event/tomten_liggande.png",
 		description: "Välkommen till en magisk kväll vid grillringen utanför bygdegården! Vi bjuder på glögg, julmust och pepparkakor medan vi väntar på att tomten kanske dyker upp i skogens dunkel. Barnen får möjlighet att lämna sina önskelistor direkt till tomten – en riktig jultradition för hela byn!"
 	},
 	{
@@ -63,13 +63,26 @@ function updateEventDisplay() {
 	const nearestEvent = getNearestEvent();
 
 	if (nearestEvent) {
-		document.querySelector(".date-index img").src = nearestEvent.icon;
-		document.querySelector(".date-index img").alt = nearestEvent.date;
-		document.querySelector(".image-index img").src = nearestEvent.image;
-		document.querySelector(".image-index img").alt = nearestEvent.title;
-		document.querySelector(".textcontainer-index h2").textContent = nearestEvent.title;
-		document.querySelector(".textcontainer-index p").textContent =nearestEvent.description;
-	}
+        const dateImg = document.querySelector(".date-index img");
+        const eventImg = document.querySelector(".image-index img");
+        const title = document.querySelector(".textcontainer-index h2");
+        const description = document.querySelector(".textcontainer-index p");
+
+        if (dateImg) {
+            dateImg.src = nearestEvent.icon;
+            dateImg.alt = `Datum: ${nearestEvent.date.substring(0, 10)}`;
+        }
+        if (eventImg) {
+            eventImg.src = nearestEvent.image;
+            eventImg.alt = nearestEvent.title;
+        }
+        if (title) {
+            title.textContent = nearestEvent.title;
+        }
+        if (description) {
+            description.textContent = nearestEvent.description;
+        }
+    }
 }
 
 // Kör funktionen när sidan laddas
