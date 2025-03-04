@@ -527,6 +527,10 @@ input[type="submit"] {
 	width: 100px;
 	font-weight: bold;
 	margin-top: 20px;
+	transition: transform 0.2s ease;
+}
+input[type="submit"].clicked {
+	transform: scale(1.2);
 }
 
 @media screen and (max-width: 700px) {
