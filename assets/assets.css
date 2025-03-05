@@ -291,7 +291,7 @@ footer hr {
 .event-description {
     display: none;
 	position: absolute;
-    font-size: 14px;
+    font-size: 12px;
     color:#0D3B66;
 	white-space: nowrap;
 	max-width: 200px;
