@@ -271,12 +271,11 @@ footer hr {
 	border: 8px solid #F2E3BC;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-}
-/* Beräknar placeringen av punkterna runt cirkeln */
-.event {
-    left: calc(50% + 400px * cos(var(--angle)));
+
+	left: calc(50% + 400px * cos(var(--angle)));
     top: calc(50% + 400px * sin(var(--angle)));
 }
+
 /* Stil för textetiketterna */
 .label-event {
     position: absolute;
@@ -291,9 +290,11 @@ footer hr {
 }
 .event-description {
     display: none;
-    font-size: 12px;
+	position: absolute;
+    font-size: 14px;
     color:#0D3B66;
-    margin-top: 5px;
+	white-space: nowrap;
+	max-width: 200px;
 }
 
 .destinationcontainer {
