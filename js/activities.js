@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 });
 
-/** Automatisk uträkning av posiion av event */
+/** Automatisk uträkning av position av event */
 $(document).ready(function () {
     $(".event").each(function () {
         let dateText = $(this).find(".label-event").text(); 
