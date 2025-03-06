@@ -16,3 +16,14 @@ $(document).ready(function () {
 	});
 
 });
+
+/** Ändrar stil på menyn när man hovrar */
+const menuItems = document.querySelectorAll(".menu ul li a");
+menuItems.forEach(item => {
+    item.addEventListener("mouseover", () => {
+        item.style.opacity = "1.0"; // Ändra textfärg på hover
+    });
+    item.addEventListener("mouseout", () => {
+        item.style.opacity = ""; // Återställ textfärg
+    });
+});
