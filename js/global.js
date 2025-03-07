@@ -1,5 +1,4 @@
 /** Funktion som skapar en "till toppen"-knapp */
-
 $(document).ready(function () {
 	// Visa eller dölj knappen beroende på scroll-position
 	$(window).scroll(function () {
@@ -25,5 +24,15 @@ menuItems.forEach(item => {
     });
     item.addEventListener("mouseout", () => {
         item.style.opacity = ""; // Återställ textfärg
+    });
+});
+
+/** Funktion av hamburger-meny */
+$(document).ready(function () {
+    $(".hamb-menu").click(function () {
+        $("#menu").stop().slideToggle(300, function () {
+            $(this).toggleClass("active"); // Lägger till/ta bort "active" efter slide-animationen
+        });
+        $(".hamb-menu").toggleClass("active"); // För att eventuellt animera hamburgarikonen
     });
 });

@@ -559,13 +559,28 @@ input[type="submit"].clicked {
 	.hamb-menu {
 		display: flex;
 	}
+	.hamb-menu.active .bar:nth-child(1) {
+		transform: translateY(2.7vw) rotate(45deg);
+	}
+	.hamb-menu.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamb-menu.active .bar:nth-child(3) {
+		transform: translateY(-2.6vw) rotate(-45deg);
+	}
+	.bar {
+		transition: all 0.3s ease-in-out;
+		transform-origin: 50% 50%;
+	}
 	.menu {
 		display: none;
 		width: 100%;
 		flex-direction: column;
 		position: absolute;
 		top: 80px;
+		left: 0;
 		background-color: #F2E3BC;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
 	}
 	.menu ul {
 		flex-direction: column;
@@ -574,6 +589,10 @@ input[type="submit"].clicked {
 		margin: 0;
 		text-align: center;
 		padding: 10px 0;
+	}
+	.menu ul li a {
+		color: #0D3B66;
+		opacity: 0.7;
 	}
 	.menu.active {
 		display: flex;
