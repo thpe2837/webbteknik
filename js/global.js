@@ -1,3 +1,4 @@
+
 /** Funktion som skapar en "till toppen"-knapp */
 $(document).ready(function () {
 	// Visa eller dölj knappen beroende på scroll-position
@@ -30,7 +31,7 @@ menuItems.forEach(item => {
 /** Funktion av hamburger-meny */
 $(document).ready(function () {
     $(".hamb-menu").click(function () {
-        $("#menu").stop().slideToggle(300, function () {
+        $("#menu").stop(true, true).slideToggle(300, function () {
             $(this).toggleClass("active"); // Lägger till/ta bort "active" efter slide-animationen
         });
         $(".hamb-menu").toggleClass("active"); // För att eventuellt animera hamburgarikonen
