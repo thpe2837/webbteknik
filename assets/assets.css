@@ -358,13 +358,6 @@ footer hr {
 .textcontainer-communities a:hover {
 	font-weight: bold;
 }
-.video-jakt {
-	width: 50%;
-	height: 50%;
-	object-fit: cover;
-	filter: saturate(0);
-	margin-top: 60px;
-}
 
 /*HISTORY*/
 .category-grid {
