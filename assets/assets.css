@@ -324,6 +324,9 @@ footer hr {
 	padding-right: 50px;
 	gap: 70px;
 }
+.communitie {
+	cursor: pointer;
+}
 .communitiescontainer {
 	width: 90%;
 	display: block;
