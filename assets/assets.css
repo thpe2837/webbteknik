@@ -337,6 +337,7 @@ footer hr {
 	width: 90%;
 	display: block;
 	padding: 50px;
+	padding-top: 0;
 	gap: 100px;
 }
 .textcontainer-communities {
