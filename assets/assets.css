@@ -212,6 +212,12 @@ footer hr {
 	display: flex;
 	gap: 20px;
 }
+.image-index img {
+	width: 362px;
+	height: 272px;
+	object-fit: cover;
+	display: block;
+}
 .textcontainer-index {
 	width: 500px;
 	text-align: left;
