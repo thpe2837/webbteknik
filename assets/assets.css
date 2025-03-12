@@ -326,12 +326,19 @@ footer hr {
 .pictures-communities {
 	width: 100%;
 	display: flex;
-	padding-left: 50px;
-	padding-right: 50px;
-	gap: 70px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 50px;
+	gap: 30px;
 }
 .communitie {
+	flex: 1 1 calc(33.333% - 30px);
+	max-width: 362px;
 	cursor: pointer;
+}
+.communitie img {
+	width: 100%;
+	height: auto;
 }
 .communitiescontainer {
 	width: 90%;
@@ -606,8 +613,14 @@ input[type="submit"].clicked {
 
 	/*MAIN*/
 	.infocontainer {
+		width: 95%;
+		padding: 30px 10px;
 		flex-direction: column;
 		gap: 0;
+	}
+	.introcontainer {
+		width: 95%;
+		padding: 50px 10px;
 	}
 
 	/*FOOTER*/
@@ -621,13 +634,55 @@ input[type="submit"].clicked {
 	}
 
 	/*INDEX*/
+	.videocontainer {
+		height: 35vh;
+	}
+	.spacer {
+		height: 35vh;
+	}
 	.imagecontainer-index {
 		flex-direction: column;
+	}
+	.textcontainer-index {
+		width: 100%;
+		padding: 30px 10px;
+	}
+	.facebooklink {
+		width: 95%;
+		padding: 30px 10px;
+	}
+
+	/*COMMUNITIES*/
+	.pictures-communities {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	.communitie {
+		flex: 1 1 100%;
+		max-width: 90%;
+	}
+	.communitiescontainer {
+		width: 95%;
+		padding: 30px 10px;
+	}
+	.textcontainer-communities p {
+		font-size: 16px;
+		text-align: left;
 	}
 
 	/*HISTORY*/
 	.category-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/*ABOUT US*/
+	.formcontainer {
+		width: 100%;
+		padding: 30px 10px;
+	}
+	input, textarea {
+		width: 95%;
 	}
 }
 
