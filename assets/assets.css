@@ -530,7 +530,7 @@ form {
 	color: #0D3B66;
 }
 input, textarea {
-	width: 60%;
+	width: 70%;
 	padding: 10px; /* Lägg till lite inre marginal */
     border: none;
     font-size: 16px; /* Samma textstorlek */
@@ -538,6 +538,9 @@ input, textarea {
 	color: #0D3B66;
     box-sizing: border-box; /* Gör så att padding inte påverkar storleken */
 	background-color: #F8F1DD;
+}
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #C1666B; /* Ändra färgen på fokusmarkeringen */
 }
 label {
 	margin-top: 20px;
