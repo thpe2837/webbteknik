@@ -1,4 +1,4 @@
-/** Animation för beskrivning av event */
+/** Animation för beskrivning av event 
 $(document).ready(function () {
     $(".label-event").click(function () {
         let desc = $(this).next(".event-description");
@@ -6,6 +6,7 @@ $(document).ready(function () {
         desc.fadeToggle(200);
     });
 });
+*/
 
 /** Automatisk uträkning av position av event */
 $(document).ready(function () {
