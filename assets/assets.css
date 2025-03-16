@@ -561,10 +561,14 @@ input[type="submit"] {
 	width: 100px;
 	font-weight: bold;
 	margin-top: 20px;
-	transition: transform 0.2s ease;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+input[type="submit"]:focus {
+	outline: none;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 input[type="submit"].clicked {
-	transform: scale(1.2);
+	transform: scale(0.8);
 }
 
 @media screen and (max-width: 700px) {
